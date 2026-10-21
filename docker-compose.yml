@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    image: dariga-shaikhiyeva-devops
+    container_name: dariga-shaikhiyeva-container
+    environment:
+      STUDENT_NAME: "Shaikhiyeva"
+      STUDENT_SURNAME: "Dariga"
+      STUDENT_GROUP: "IT2-2314"
+      STUDENT_ID: "38340"
+      KEEP_ALIVE: "1"
+    ports:
+      - "8080:8080"
